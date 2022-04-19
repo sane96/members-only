@@ -1,0 +1,7 @@
+<br>
+<p><%= @post.body %></p>
+
+<button><%= link_to 'Edit',  edit_post_path, method: :edit%></button>
+<button><%= link_to 'Delete',  @post, method: :destroy, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%></button>
+
+<button><%= link_to "Home", posts_path%></button>
